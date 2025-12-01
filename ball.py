@@ -9,7 +9,8 @@ class Ball():
     def __init__(self,x, y):
         if Ball.image == None:
             Ball.image = load_image('ball21x21.png')
-            self.x, self.y = x, y
+            self.x = random.randint(50,common.court.w - 50) #보이랑 같게
+            self.y = random.randint(80,common.court.h - 50)
 
     def draw(self):
         self.image.draw(self.x, self.y)
