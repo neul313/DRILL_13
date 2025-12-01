@@ -2,6 +2,7 @@ from pico2d import load_image, load_font, draw_rectangle, get_canvas_width, get_
 from sdl2 import SDL_KEYDOWN, SDLK_SPACE, SDLK_RIGHT, SDL_KEYUP, SDLK_LEFT, SDLK_UP, SDLK_DOWN
 
 import common
+from ball import Ball
 import game_world
 import game_framework
 
