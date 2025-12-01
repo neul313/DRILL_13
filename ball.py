@@ -13,7 +13,11 @@ class Ball():
             self.y = random.randint(80,common.court.h - 50)
 
     def draw(self):
-        self.image.draw(self.x, self.y)
+
+        sx = self.x - common.court.window_left
+        sy = self.y - common.court.window_bottom
+        self.image.draw(sx, sy)
+
         draw_rectangle(*self.get_bb())
 
     def update(self):
